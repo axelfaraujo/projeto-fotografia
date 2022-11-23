@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600&display=swap');
 
 :root{
-    --letra1:'Bebas Neue' cursive;
-    --letra2:'Montserrat', sans-serif;
+    --letra1:'Source Serif Pro', serif;;
+    --letra2:'Source Sans Pro', sans-serif;
     --footer:'Josefin Sans', sans-serif;
 }
 
@@ -14,18 +14,14 @@ body{
     margin: 0;
     padding: 0;
     color: #242424;
-    font-family: sans-serif;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-h1, h2{
-    font-weight: 900;
-    color: black;
-}
+    font-family: var(--letra2);
+    /*word-wrap: break-word;
+    overflow-wrap: break-word;*/
+    }
 
 h1{
-    font-size: 3.5vw;
+    font-weight: 900;
+    color: black;
 }
 
 .wrapper{
@@ -47,8 +43,8 @@ main{
 
 section.module p{
     margin-bottom: 40px;
-    font-size: 1em;
-}
+    font-size: min(30px, 2vw);
+   }
 
 section.module:last-child{
     margin-bottom: 0;
@@ -56,7 +52,9 @@ section.module:last-child{
 
 section.module h2{
     margin-bottom: 40px;
-    font-size: 30px;
+    font-size: max(30px, 2vw);
+    text-transform: uppercase;
+    letter-spacing: 7px;
 }
 
 section.module.content{
@@ -95,19 +93,19 @@ section.module.parallax-1{
 }
 
 section.module.parallax-2{
-    background-image: url('/imagens/pexels-ákos-szabó-440731.jpg');
+    background-image: url('imagens/pexels-ákos-szabó-440731.jpg');
 }
 
 section.module.parallax-3{
-    background-image: url('/imagens/pexels-riccardo-bertolo-4245826.jpg');
+    background-image: url('imagens/pexels-riccardo-bertolo-4245826.jpg');
 }
 
 section.module.parallax-4{
-    background-image: url('/imagens/pexels-janik-butz-5366526.jpg');
+    background-image: url('imagens/pexels-janik-butz-5366526.jpg');
 }
 
 section.module.parallax-5{
-    background-image: url('/imagens/pexels-ian-beckley-2440021.jpg');
+    background-image: url('imagens/pexels-ian-beckley-2440021.jpg');
 }
 
 
@@ -118,7 +116,6 @@ section.module.parallax h1{
     text-align: center;
     z-index: 50;
     text-transform: uppercase;
-
 }
 
 footer{
@@ -134,16 +131,10 @@ footer > a{
     color: #003D7E;
 }
 
-@media (max-width: 900px){
-    .wrapper{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 350px) {
-    img{
-        width: 250px;
-        height: 250px;
+@media screen and (max-width: 768px) {
+    .container > p {
+        width: 100%;
+        padding: 0;
+        margin-left: 0px;
     }
 }
