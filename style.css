@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root{
-    --letra1:'Source Serif Pro', serif;;
+    --letra1:'Cardo', serif;
     --letra2:'Source Sans Pro', sans-serif;
     --footer:'Josefin Sans', sans-serif;
 }
@@ -115,20 +115,22 @@ section.module.parallax h1{
     font-size: 75px;
     text-align: center;
     z-index: 50;
-    text-transform: uppercase;
+    font-variant: small-caps;
 }
 
 footer{
+    background-color: #ece7d5;
     font-family: var(--footer);
     font-size: 18px;
     padding: 3px;
     justify-content: center;
     text-align: center;
+    padding-top: 2px;
 }
 
 footer > a{
     text-decoration: none;
-    color: #003D7E;
+    color: #407bb7;
 }
 
 @media screen and (max-width: 768px) {
