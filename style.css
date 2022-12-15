@@ -19,6 +19,35 @@ body{
     /*overflow-wrap: break-word;*/
     }
 
+.menu{
+    padding: 0 20px;
+    justify-content: space-between;
+    background: none;
+}
+
+nav, ul{
+    display: flex;
+    flex-direction: row;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+li{
+    padding: 0 20px;
+}
+
+
+li:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
 a {
     color: #696D83;
     text-decoration: none;
